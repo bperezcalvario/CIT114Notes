@@ -1,0 +1,31 @@
+# Notes 07
+
+## Storage
+
+### Volatile and Non-Volatile 
+
+Volatile: contents are erased when system power is turned off.
+Non-Volatile: persistent or permanent storage where content is saved whether power is on or off. 
+
+### Local Storage Types
+
+Read Only Memory (RAM): temporary storage where data and programs are stored at the disposal of the operating system; as long as system is powered on. More memory means faster performance as more information and software is loaded and processed faster. 
+Hard Drives (HDD): permanent stores data even system is powered off; 5,000 to 10,0000 microseconds to access data; capable of storing large amount of storage at a cheaper price compared to solid state drives. Contain mechanical moving parts within; higher risk of mechanical failure
+Solid State Drives (SSD): also stores data even when system is powered off; 35 to 100 microseconds to access data; higher priced than a traditional hard drive but with faster speeds and more reliability; more incetives are lower power consumption along with minimal noise and heat production
+Flash Drives: also known as thumb drives or USB drives; small portable device that can be plugged into computers to transfer information; no moving parts; normally does not have an Operating System installed and not used to run a system
+
+### Disaster Recovery and Technology
+
+Disaster Recovery: set of policies, tools, and procedures that help IT infrastructure continue to function after a disaster; goal is to be on track with a plan that has been in place to get a business running as if nothing happened as fast as possible. 
+Fault Tolerance: the ability to continue running a business while a component in the system has failed; can be achieved by reducing single points of failures, isolated failures, or to have the ability to contain failures. 
+
+Replication: the idea is to replicate data in multiple hard drives in multiple locations; typically more expensive as more equipment is needed and is running at the same time which means more power consumed. 
+Redundancy: if a failure occurs, the business will be able to continue to run, although at a slower pace and/or reduced capacity, until issue is resolved. 
+
+### Storage in the Enterprise
+
+Redundant Array of Independent Disks (RAID): different levels of drive configurations in order to improve redundancy for a large business/enterprise
+RAID LEVELS: RAID 0, RAID 1, RAID 5, RAID 6, & RAID 1+0, While RAID 0 improves speed rather than redundancy, the other levels improve redundancy the higher the level
+File Servers: Are used to store large amounts of data that is accessible on a local network but closed to the rest of the internet
+Network Attached Storage (NAS): Provides a networ with additional storage allowing authorized users to access over internet
+Storage Area Network (SAN): high speed network that can be attached to servers using fast technologies giving the impressions that data is saved locally
