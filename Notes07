@@ -29,3 +29,69 @@ RAID LEVELS: RAID 0, RAID 1, RAID 5, RAID 6, & RAID 1+0, While RAID 0 improves s
 File Servers: Are used to store large amounts of data that is accessible on a local network but closed to the rest of the internet
 Network Attached Storage (NAS): Provides a networ with additional storage allowing authorized users to access over internet
 Storage Area Network (SAN): high speed network that can be attached to servers using fast technologies giving the impressions that data is saved locally
+
+### Storage in the Cloud
+
+-Storage is provided by a vendor using a pay-as-you-go business model: the more storage you use the more the user pays
+-Storage is provided through the internet where the vendor's setup is not visible, but data is accessible online
+Cloud Storage Requirements: Durability, Availbility, and Security
+
+Different types of Cloud Storage include:
+-Object storage: Applications that are developed in the cloud
+-File Storage: Ideal for large content repositories, media stores
+-Block Storage: Used for databases that allow low latency storage
+
+Uses for Cloud Storage:
+-Backup and Recovery
+-Software Test and Development
+-Cloud Data Migration
+-Compliance
+-Big Data and Data Lakes
+
+### Encrypting Storage
+
+-Security is a very important and as such, one must protect information from being compromised. 
+- Data can be "at rest" or "in transit" 
+- Encryption can help conceal plain text and turn it into unreadable text unless the user has the decryption key to decypher the information. 
+- Data at rest, also information stored physically where it is not in use, is more at risk of being compromised so it is recommended to use file or disk level encryption
+- File level encryption only encrypts certain files that has been desginated while disk level encrypts everything on the drive
+- Data encryption for data in transit is very different as there are multiple methods for encrypting connecting and messages
+
+### Data Backups
+
+- Full/Normal: creates a backup for files and folders and clears archival bit (uses more space but faster to restore)
+- Copy: makes a copy regardless of files, folders, data modified, or archive bit status. Does not clear archive bit
+- Incremental: makes changes to modified files since last backup and then clears archival bit
+- Differential: makes changes to files that was modified since last full backup and does not clear archival bit
+- Daily: backs up files created/modified that very day
+- Data backups can be saved on-site or off-site. 
+
+### What are the core AWS Storage Services
+
+- Object Storage: Amazon Simple Storage Service (S3), Amazon S3 Glacier
+- File Storage: Amazon Elastic File System (EFS), Amazon FSx for Windows File Server, Amazon FSx for Lustre integrated with Amazon S3
+- Block Storage: Amazon Elastic Block Store (EBS) 
+
+- Additional Amazon services: AWS Backup, AWS Storage Gateway(Hybrid cloud storage with on-premises access), AWS Datasync (allows fast to and from AWS transfer speeds), AWS Transfer Family (transfer to Amazon S3 using SFTP, FTPS, and FTP)
+AWS Snow Family (physical devices migrate data in/out AWS
+
+### Amazon Simple Storage Service
+
+- Object storage service, easy to use, and desingned for 99.99999% of durability
+- Features buckets, which allows up to 5TB of storage that will be saved across multiple AWS facilities within selected region; designed to store data even if there is loss in two AWS faciltiies
+- Multiple object-level storage classes are offered that are designed for different uses
+- Cost consists of stored objects in S3 as well as amount of data, transfer to other regions, and (PUT, COPY, POST, LIST, AND GET) requests
+- Uses: Backup and restore, Disaster recovery, Archive, Data lakes, Hybrid cloud storage, Cloud native applications
+
+### Amazon S3 Glacier
+
+- extremely low cost service for data archiving and long term backup
+- supports encryption for data in transit ( SSL & TLS ) 
+- Latency between S3 and S3 Glacier is very different as the latency is min/hours for Glacier instead of ms(milliseconds)
+- Encrypts data at rest with AES Advanced Encryption Standard
+- Uses: Media Asset Workflows, Healthcare Info Archiving, Regulatory & Compliance Archiving, Scientific Data Storage, Digital Preservation, Magnetic Tape Replacement
+
+
+
+
+
